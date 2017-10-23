@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:key="pref_notify"
+        android:title="Show Pop-Up Notification"
+        android:defaultValue="true"
+        />
+    <PreferenceCategory android:key="prefcat_examples"
+        android:title="Preference Examples"
+        >
+        <CheckBoxPreference android:key="pref_check"
+            android:title="Check me?"
+            android:defaultValue="false"
+            />
+        <EditTextPreference android:key="pref_text"
+            android:title="Saved Text"
+            android:defaultValue="@string/default_text"
+            />
+    </PreferenceCategory>
+
+    <PreferenceScreen android:key="prefscreen_second"
+        android:title="More Settings"
+        >
+        <CheckBoxPreference android:key="pref_check2"
+            android:title="Another checkbox?"
+            android:defaultValue="true"
+            />
+    </PreferenceScreen>
+</PreferenceScreen>
